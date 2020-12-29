@@ -1,0 +1,26 @@
+[
+    {
+        "name": "máy tính",
+        "image": "may-tinh.jpg"
+    },
+    {
+        "name": "camera",
+        "image": "camera.jpg"
+    },
+    {
+        "name": "máy tính bảng",
+        "image": "may-tinh-bang.jpg"
+    },
+    {
+        "name": "điện thoại",
+        "image": "dien-thoai.jpg"
+    },
+    {
+        "name": "đồng hồ",
+        "image": "dong-ho.jpg"
+    },
+    {
+        "name": "thiết bị thông minh",
+        "image": "smart.jpg"
+    }
+]
