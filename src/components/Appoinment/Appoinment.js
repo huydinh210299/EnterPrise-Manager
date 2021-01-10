@@ -50,14 +50,7 @@ function Appoinment() {
                 'Authorization': `Bearer ${token}`,
             }
         });
-        if(rs.data.statusCode === 200){
-            alert("Tạo lịch hẹn thành công");
-            let tmp = change;
-            tmp++;
-            setchange(tmp);
-        }else{
-            alert("Tạo lịch hẹn thất bại mời kiểm tra lại!");
-        }
+        alert("Tạo lịch hẹn thành công");
         setShow(false);
     }
 

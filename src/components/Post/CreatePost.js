@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { useFormik } from 'formik';
+import {Field, useFormik } from 'formik';
 import axios from "axios";
 import { quanhuyen } from '../../common/quanhuyen';
 import Cookies from 'js-cookie'
@@ -244,7 +244,12 @@ function CreatePost() {
                 </div>
                 <div className="form-group">
                     <label htmlFor="description">Mô tả:</label>
-                    <input
+                    <textarea id="description" className="form-control" name="description" rows="4" cols="50"
+                    onChange={formik.handleChange}
+                    value={formik.values.description}
+                    required>
+                    </textarea>
+                    {/* <input
                         id="description"
                         name="description"
                         type="text"
@@ -252,11 +257,16 @@ function CreatePost() {
                         onChange={formik.handleChange}
                         value={formik.values.description}
                         required
-                    />
+                    /> */}
                 </div>
                 <div className="form-group">
                     <label htmlFor="require">Yêu cầu:</label>
-                    <input
+                    <textarea id="require" className="form-control" name="require" rows="4" cols="50"
+                    onChange={formik.handleChange}
+                    value={formik.values.require}
+                    required>
+                    </textarea>
+                    {/* <input
                         id="require"
                         name="require"
                         type="text"
@@ -264,11 +274,16 @@ function CreatePost() {
                         onChange={formik.handleChange}
                         value={formik.values.require}
                         required
-                    />
+                    /> */}
                 </div>
                 <div className="form-group">
                     <label htmlFor="benefit">Phúc lợi:</label>
-                    <input
+                    <textarea id="benefit" className="form-control" name="benefit" rows="4" cols="50"
+                    onChange={formik.handleChange}
+                    value={formik.values.benefit}
+                    required>
+                    </textarea>
+                    {/* <input
                         id="benefit"
                         name="benefit"
                         type="text"
@@ -276,7 +291,7 @@ function CreatePost() {
                         onChange={formik.handleChange}
                         value={formik.values.benefit}
                         required
-                    />
+                    /> */}
                 </div>
                 <div className="form-group">
                     <label htmlFor="skill">Kỹ năng yêu cầu:</label>

@@ -262,11 +262,11 @@ function Signin() {
                         <option value="10-50" label="10-50 nhân viên"/>
                         <option value="50-100" label="50-100 nhân viên"/>
                         <option value="100-300" label="100-300 nhân viên"/>
-                        <option value="300-500" label="500-500 nhân viên"/>
+                        <option value="300-500" label="300-500 nhân viên"/>
                         <option value=">500" label="Trên 500 nhân viên"/>
                     </select>
                 </div>
-                <button type="submit" className="btn btn-primary">Login</button>
+                <button type="submit" className="btn btn-primary">Create</button>
             </form>
         </div>
     )

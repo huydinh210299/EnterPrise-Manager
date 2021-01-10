@@ -35,10 +35,10 @@ function Post() {
                     <table className="table-fill pt-4">
                         <thead>
                             <tr>
-                                <th className="text-left">Vị trí</th>
+                                <th className="text-left" style={{minWidth: "200px"}}>Vị trí</th>
                                 <th className="text-left">Thông tin</th>
-                                <th className="text-left">Số lượng</th>
-                                <th className="text-left">Thao tác</th>
+                                <th className="text-left" style={{minWidth: "100px"}}>Số lượng</th>
+                                <th className="text-left" style={{minWidth: "300px"}}>Thao tác</th>
                             </tr>
                         </thead>
                         <tbody className="table-hover">
@@ -46,15 +46,21 @@ function Post() {
                                 post.map((item, index) =>
                                     <tr key={index}>
                                         <td className="text-left">{item.position}</td>
-                                        <td className="text-left">{item.description}</td>
+                                        <td className="text-left" style={{}}>
+                                            <div style={{height: "50px", overflow: "hidden"}}>
+                                            {item.description}
+                                            </div>
+                                        </td>
                                         <td className="text-left">{item.amount}</td>
-                                        <td className="text-left d-flex justify-content-around">
+                                        <td >
+                                            <div className="text-left d-flex justify-content-around">
                                             <Link className="nav-link btn btn-primary" to={{
                                                 pathname: `/editpost/${item.id}`
                                             }}>Sửa thông tin</Link>
                                             <button className="btn btn-success" onClick={() => {
                                                 history.push(`/apointment/${item.id}`)
                                             }}>Danh sách ứng viên</button>
+                                            </div>
                                         </td>
                                     </tr>
                                 ) :

@@ -200,7 +200,7 @@ function EditPost() {
                     <label for="email">Kỹ năng yêu cầu:</label>
                     <input class="form-control" placeholder="Các kỹ năng cần có" value={post.skill} data-value="skill" onChange={onValueChange}/>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Save</button>
             </form>
         </div>
     )
